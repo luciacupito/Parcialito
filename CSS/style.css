@@ -1,0 +1,48 @@
+.container {
+    justify-content: space-around;  /* espacio entre los articulos */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;  /* respete el ancho de sus elementos hijos */
+    background-color: rgba(162, 113, 207, 0.691);
+    border: 15px;  /* relleno de los laterales */
+    height: 650px; 
+}
+
+.item{
+    justify-content: space-around;  
+    align-items: center;  
+    background-color: rgba(122, 230, 194, 0.787);
+    margin: 15px;
+    padding: 15px ;  /* relleno de los laterales de los articulos */
+    width: 150px;  /* ancho de los articulos */
+    align-items: stretch;
+}
+
+.shrek{
+    order: 5;
+    align-self: center;     /* alineado en el centro */
+}
+
+.burro {
+    order:3;
+    align-self: center;   /* alineado en el centro */
+}
+
+.fiona{
+    order: 1;
+    align-self: stretch;   /* se amplia hasta las medidas dadas */
+}
+
+.gato {
+    order: 2;
+    align-self: flex-end;  /* alineado abajo */
+}
+
+.pinocho {
+    order:4;
+    align-self: flex-start; /* alineado arriba */
+}
+
+.img {
+    height: 100px;
+}
